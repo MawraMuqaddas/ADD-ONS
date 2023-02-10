@@ -33,6 +33,7 @@ thisdict = {
   "brand": "Ford",
   "model": "Mustang",
   "year": 1964
+  
 }
 print(thisdict)
 
@@ -56,3 +57,7 @@ for x in fruits:
   print(x)
   if x == "banana":
     break
+    
+ #functions
+def my_function():
+  print("Hello from a function")
