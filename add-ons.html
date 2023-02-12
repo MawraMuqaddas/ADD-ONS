@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Add-ons Mozilla</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<style>
+	
+	#react-view {
+    height: 100%;
+}
+
+body {
+    background: #0f1126;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.15;
+}
+
+
+.Page-amo {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+
+.Header {
+  background: #20123a;
+ 
+}
+.Header-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,auto) min-content;
+    min-height: 112px;
+    padding: 0 12px;
+}
+.Header-content {
+    grid-column: 1/span 4;
+    grid-row: 2/4;
+    margin: 0 0 36px;
+    text-align: left;
+    width: 100%;
+    z-index: 4;
+	padding-bottom:1rem;
+}
+.Header-title-wrapper {
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+}
+h1, h2 {
+    color: #000;
+    font-family: Inter,sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.Header-title, .Header-title:link {
+    color: #fff;
+}
+.Header-title {
+    background-image: url(/static-frontend/459ebe4….svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 207px 48px;
+    display: block;
+    height: 48px;
+    margin: 0;
+    width: 100%;
+}
+
+a {
+    background-color: transparent;
+}
+a:-webkit-any-link {
+  
+    cursor: pointer;
+    text-decoration: underline;
+}
+h1.Header-title-wrapper {
+    font-size: 40px;
+}
+
+h1, h2 {
+    color: #000;
+    font-family: Inter,sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    border: 0;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.Header-user-and-external-links {
+    grid-column: 4;
+    grid-row: 1/2;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.Header-authenticate-button, .Header-authenticate-button:link {
+    font-size: 14px;
+	
+}
+.Header-authenticate-button {
+    margin-left: 6px;
+}
+.Header-authenticate-button, .Header-authenticate-button:link {
+font-family:cursive;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 4px;
+	padding-right:2rem;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+.Header-button {
+    margin-left: 20px;
+}
+.Header-authenticate-button {
+    display: inline-flex;
+    min-height: 24px;
+    white-space: nowrap;
+}
+.Header-button {
+    margin-bottom: 12px;
+}
+a {
+    background-color: transparent;
+}
+.Page-content {
+    background: #e9ecef;
+    flex-grow: 1;
+    padding: 0 0 10px;
+}
+.Page-no-hero-promo, .Page-not-homepage {
+    max-width: 1366px;
+}
+.Page {
+    margin: 0 auto;
+}
+.AppBanner:empty {
+    padding: 0 0 10px;
+}
+.Home {
+    width: 100%;
+}
+.Home-content {
+    margin: 0 auto;
+    max-width: 1366px;
+    padding: 0 10px 10px;
+}
+.Home-heroHeader {
+    color: #343a40;
+    padding: 10px 0 24px;
+    text-align: center;
+}
+.Home-heroHeader-title {
+    font-size: 32px;
+    margin: 24px 0 20px;
+}
+.Home-heroHeader-subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 0 24px;
+}
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+
+	</style>
+	</head>
+	<body>
+	<div id="react-view">
+	<div class="page-amo">
+	<header class="Header">
+                    <div class="Header-wrapper">
+                        <div class="Header-content">
+                            <h1 class="Header-title-wrapper">
+                                <a class="Header-title" href="/en-US/android/">
+								<img src="https://addons.mozilla.org/static-frontend/459ebe418a9783cd0b80bdd8b98e5faa.svg">
+                                    <span class="visually-hidden">Firefox Browser Add-ons</span>
+                                </a>
+                            </h1>
+                        </div>
+                            <div class="Header-user-and-external-links">
+                                <a class="Button Button--none Header-authenticate-button Header-button Button--micro" href="#login">Log in</a>
+                            </div>
+					</div>
+	</header>
+					<div class="Page-content">
+						<div class="Page Page-no-hero-promo">
+								<div class="AppBanner"></div>
+								<div class="Home">
+								<span class="visually-hidden do-not-remove"></span>
+								<div class="Home-content">
+								<div class="Home-heroHeader">
+								<h2 class="Home-heroHeader-title">Extensions are like apps for Firefox.</h2>
+								<h3 class="Home-heroHeader-subtitle">They add features to Firefox to make browsing faster, safer, or just plain fun.</h3>
+								</div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </body>
+                                </html>
+                                
+
+								
