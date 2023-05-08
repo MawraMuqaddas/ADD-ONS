@@ -4,8 +4,14 @@
     <title>Add-ons Mozilla</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<style>
+ *, :after, :before {
+    box-sizing: inherit;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
 	
 	#react-view {
     height: 100%;
@@ -197,6 +203,161 @@ h3 {
     line-height: 1.2;
 }
 
+.CardList {
+    margin: 3px 0;
+}
+section {
+    display: block;
+}
+.Card-header {
+    background: #fff;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 1px;
+    margin-top: 0;
+    overflow: hidden;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+
+.CardList .Card-contents {
+    padding: 0;
+}
+.Card-contents {
+    background: #fff;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 1px;
+    margin-top: 0;
+    overflow: hidden;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.CardList ul li {
+    background: #fff;
+    margin-bottom: 1px;
+    padding: 20px;
+}
+.SearchResult {
+    list-style-type: none;
+    margin: 0 0 1px;
+}
+li {
+    display: list-item;
+}
+.SearchResult-result {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    max-width: 720px;
+    padding: 0;
+    width: 100%;
+}
+.SearchResult-icon-wrapper {
+    order: 0;
+}
+.SearchResult-icon {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+}
+img {
+    border-style: none;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.SearchResult-contents {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin: 0 10px;
+    order: 1;
+    width: 0;
+}
+.SearchResult-name {
+    align-items: flex-start;
+    color: #343a40;
+    font-family: cursive;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    row-gap: 6px;
+ 
+    width: 100%;
+}
+.SearchResult-link,
+ .SearchResult-link:visited {
+    color: #333;
+}
+.SearchResult-link {
+    margin-right: 8px;
+}
+
+a {
+    background-color: transparent;
+}
+a:-webkit-any-link {
+    cursor: pointer;
+}
+.SearchResult-summary {
+    display: none;
+}
+p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.SearchResult-metadata {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    width: 100%;
+}
+.SearchResult-rating {
+    margin-right: 10px;
+}
+.SearchResult-rating {
+    display: inline-block;
+    width: auto;
+}
+.SearchResult-rating {
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.Rating--small .Rating-star {
+    min-width: 13px;
+}
+
+.checked {
+color:black;
+}
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    border: 0;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+
 
 	</style>
 	</head>
@@ -228,6 +389,110 @@ h3 {
 								<h2 class="Home-heroHeader-title">Extensions are like apps for Firefox.</h2>
 								<h3 class="Home-heroHeader-subtitle">They add features to Firefox to make browsing faster, safer, or just plain fun.</h3>
 								</div>
+<!--next section-->
+                                <section class="Card CardList AddonsCard LandingAddonsCard Home-RecommendedExtensions AddonsCard--horizontal Card--photon">
+                                    <header class="Card-header">
+                                        <div class="Card-header-text">Recommended extensions</div>
+                                    </header>
+                                    <div class="Card-contents">
+                                        <ul class="AddonsCard-list">
+                                            <li class="SearchResult">
+                                                <div class="SearchResult-wrapper">
+                                                    <div class="SearchResult-result">
+                                                        <div class="SearchResult-icon-wrapper">
+                                                            <img class="SearchResult-icon" src="https://addons.mozilla.org/user-media/addon_icons/811/811592-64.png?modified=c75499b8" alt="Video Background Play Fix">
+                                                        </div>
+                                                        <div class="SearchResult-contents">
+                                                            <h2 class="SearchResult-name">
+                                                                <a class="SearchResult-link" href=# style="text-decoration: none;">Video Background Play Fix</a>
+                                                            </h2>
+                                                            <p class="SearchResult-summary">Some sites may not work with Firefox for Android video background play feature. This add-on provides a quick fix by blocking the Page Visibility API and the Fullscreen API.</p>
+                                                            <div class="SearchResult-metadata">
+                                                                <div class="SearchResult-rating">
+                                                                    <div class="Rating Rating--small" title="Rated 4.5 out of 5">
+                                                                        <div class="fa fa-star checked"></div>                                                                        
+                                                                        <div class="fa fa-star checked"></div>                                                                       
+                                                                            <div class="fa fa-star checked"></div>                                                                        
+                                                                            <div class="fa fa-star checked"></div>                                                                        
+                                                                            <div class="fa fa-star-half-o checked"></div>  
+                                                                        <span class="visually-hidden">Rated 4.5 out of 5</span>
+                                                                    </div>
+                                                                </div>
+                                                                <h3 class="SearchResult-author SearchResult--meta-section">JanH</h3>
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="SearchResult-users SearchResult--meta-section">
+                                                            <span class="Icon Icon-user-fill SearchResult-users-icon"></span>
+                                                            <span class="SearchResult-users-text">152,379 users</span>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="SearchResult">
+                                                <div class="SearchResult-wrapper">
+                                                    
+                                                    <div class="SearchResult-result">
+                                                        <div class="SearchResult-icon-wrapper">
+                                                            <img class="SearchResult-icon" src="https://addons.mozilla.org/user-media/addon_icons/521/521554-64.png?modified=mcrushed" alt="Decentraleyes"></div>
+                                                            <div class="SearchResult-contents">
+                                                                <h2 class="SearchResult-name">
+                                                                    <a class="SearchResult-link" href=# style="text-decoration: none;">Decentraleyes</a>
+                                                                </h2>
+                                                                <p class="SearchResult-summary">Protects you against tracking through "free", centralized, content delivery. It prevents a lot of requests from reaching networks like Google Hosted Libraries, and serves local files to keep sites from breaking. Complements regular content blockers.</p>
+                                                                <div class="SearchResult-metadata">
+                                                                    <div class="SearchResult-rating">
+                                                                        <div class="Rating Rating--small" title="Rated 4.8 out of 5">
+                                                                            <div class="fa fa-star checked"></div>                                                                        
+                                                                            <div class="fa fa-star checked"></div>                                                                       
+                                                                                <div class="fa fa-star checked"></div>                                                                        
+                                                                                <div class="fa fa-star checked"></div>                                                                        
+                                                                                <div class="fa fa-star-half-o checked"></div>  
+                                                                            <span class="visually-hidden">Rated 4.8 out of 5</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <h3 class="SearchResult-author SearchResult--meta-section">Thomas Rientjes</h3>
+                                                                </div>
+                                                            </div>
+                                                            <h3 class="SearchResult-users SearchResult--meta-section">
+                                                                <span class="Icon Icon-user-fill SearchResult-users-icon"></span>
+                                                                <span class="SearchResult-users-text">266,317 users</span>
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="SearchResult">
+                                                    <div class="SearchResult-wrapper">
+                                                        <div class="SearchResult-result">
+                                                            <div class="SearchResult-icon-wrapper">
+                                                                <img class="SearchResult-icon" src="https://addons.mozilla.org/user-media/addon_icons/9/9609-64.png?modified=mcrushed" alt="Ghostery – Privacy Ad Blocker">
+                                                            </div>
+                                                                <div class="SearchResult-contents">
+                                                                    <h2 class="SearchResult-name">
+                                                                        <a class="SearchResult-link" href=# style="text-decoration: none;">Ghostery – Privacy Ad Blocker</a>
+                                                                    </h2>
+                                                                    <p class="SearchResult-summary">Ghostery is a powerful privacy extension. Block ads, stop trackers and speed up websites.</p>
+                                                                    <div class="SearchResult-metadata">
+                                                                        <div class="SearchResult-rating">
+                                                                            <div class="Rating Rating--small" title="Rated 4.3 out of 5">
+                                                                                <div class="fa fa-star checked"></div>                                                                        
+                                                                    <div class="fa fa-star checked"></div>                                                                       
+                                                                        <div class="fa fa-star checked"></div>                                                                        
+                                                                        <div class="fa fa-star checked"></div>                                                                        
+                                                                        <div class="fa fa-star-half-o checked"></div>  
+                                                                                <span class="visually-hidden">Rated 4.3 out of 5</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <h3 class="SearchResult-author SearchResult--meta-section">Ghostery</h3>
+                                                                    </div>
+                                                                </div>
+                                                                <h3 class="SearchResult-users SearchResult--meta-section">
+                                                                    <span class="Icon Icon-user-fill SearchResult-users-icon"></span>
+                                                                    <span class="SearchResult-users-text">1,142,499 users</span>
+                                                                </h3>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
                                 </div>
                                 </div>
                                 </div>
